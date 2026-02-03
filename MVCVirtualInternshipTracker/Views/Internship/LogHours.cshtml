@@ -1,0 +1,19 @@
+﻿@model MVCVirtualInternshipTracker.Models.Internship
+
+@{
+    ViewData["Title"] = "Log Hours";
+}
+
+<h2>Log Hours</h2>
+
+<form asp-action="LogHours" method="post">
+    <input type="hidden" asp-for="Id"/>
+<div class="form-group">
+    <label asp-for="HoursLogged" class="control-label">Hours to Log</label>
+    <input asp-for="HoursLogged" class="form-control"/>
+    </div>
+    <div class="form-group">
+            <input type="submit" value="Log Hours" class="btn btn-primary"/>
+    </div>
+</form>
+
